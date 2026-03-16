@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--color-primary: #0068fa;
+	--color-background-light: #f6f6f8;
+	--color-background-dark: #101622;
+
+	--font-display: "Archivo Black", sans-serif;
+	--font-body: "Public Sans", sans-serif;
+
+	--border-width-10: 10px;
+	--border-width-12: 12px;
+}
+
+@layer utilities {
+	.vertical-text {
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+	}
+}
+
+@layer components {
+	.brutalist-card {
+		border: 4px solid black;
+		box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 1);
+		transition: all 0.1s ease;
+	}
+
+	.brutalist-card:hover {
+		transform: translate(-4px, -4px);
+		box-shadow: 16px 16px 0px 0px rgba(17, 82, 212, 1);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.dark .brutalist-card {
+			border-color: white;
+			box-shadow: 12px 12px 0px 0px rgba(255, 255, 255, 0.2);
+		}
+	}
+}
