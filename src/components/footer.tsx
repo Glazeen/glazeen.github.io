@@ -14,52 +14,17 @@ export default function Footer() {
 							className="h-32 md:h-40 w-auto mb-8"
 						/>
 						<p className="text-xl md:text-2xl font-bold max-w-2xl leading-tight text-white/80">
-							AI PRONTA ALL'USO. RISULTATI MISURABILI. POTENZIAMO LE PMI CON
-							SOLUZIONI INFORMATICHE DI GRADO ENTERPRISE.
+							Automazione AI per le PMI italiane. Riduciamo i costi,
+							automatizziamo i processi, portiamo tecnologia enterprise nelle
+							piccole e medie imprese.
 						</p>
 					</div>
 
 					{/* Right section: Link columns */}
-					<div className="grid grid-cols-2 gap-8 lg:col-span-6 lg:ml-auto">
-						{/* <div className="lg:min-w-[150px]">
-							<h4 className="text-sm font-black mb-6 text-primary uppercase tracking-widest">
-								Prodotto
-							</h4>
-							<ul className="space-y-4 text-base font-bold">
-								<li>
-									<a
-										className="text-white/70 hover:text-white transition-colors"
-										href="#features"
-									>
-										AGENTI
-									</a>
-								</li>
-								<li>
-									<a
-										className="text-white/70 hover:text-white transition-colors"
-										href="#features"
-									>
-										DASHBOARD BPI
-									</a>
-								</li>
-								<li>
-									<a
-										className="text-white/70 hover:text-white transition-colors"
-										href="#features"
-									>
-										SERVIZI GESTITI
-									</a>
-								</li>
-								<li>
-									<a
-										className="text-white/70 hover:text-white transition-colors"
-										href="#features"
-									>
-										SICUREZZA
-									</a>
-								</li>
-							</ul>
-						</div> */}
+					<nav
+						aria-label="Link del footer"
+						className="grid grid-cols-2 gap-8 lg:col-span-6 lg:ml-auto"
+					>
 						<div className="lg:min-w-[150px]">
 							<h4 className="text-sm font-black mb-6 text-primary uppercase tracking-widest">
 								Azienda
@@ -85,7 +50,7 @@ export default function Footer() {
 								</li>
 							</ul>
 						</div>
-					</div>
+					</nav>
 				</div>
 
 				{/* Bottom bar */}
@@ -93,7 +58,7 @@ export default function Footer() {
 					<div className="text-xs font-bold text-white/30 uppercase tracking-[0.2em]">
 						© 2026 Glazeen. Tutti i diritti riservati.
 					</div>
-					<div className="select-none  font-display">
+					<div className="select-none font-display">
 						<span className="uppercase text-white/10 text-4xl md:text-5xl font-black">
 							GLAZEEN
 						</span>

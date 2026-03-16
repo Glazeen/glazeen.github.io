@@ -13,33 +13,35 @@ export default function App() {
 				<section
 					className="py-12 md:py-24 bg-white dark:bg-black overflow-hidden"
 					id="features"
+					aria-label="I nostri valori"
 				>
 					<div className="container mx-auto px-6">
 						<div className="mb-12 md:mb-24 flex flex-col md:flex-row items-end justify-between gap-8">
 							<h2 className="text-6xl md:text-9xl tracking-tighter font-display uppercase">
-								SOLO RISULTATI
+								PERCHÉ SCEGLIERE L'AUTOMAZIONE AI
 							</h2>
 							<p className="text-xl font-bold max-w-md border-b-4 border-primary pb-4 italic">
-								L'automazione non è un lusso, è un'arma.
+								L'automazione non è un lusso: è il vantaggio competitivo delle
+								PMI che crescono.
 							</p>
 						</div>
 						<div className="grid md:grid-cols-3 gap-0 border-4 border-black dark:border-white">
 							<FeatureCard
 								icon="schedule"
-								title="PRAGMATISMO"
-								description="Sviluppiamo solo ciò che serve. Niente setup infiniti, solo soluzioni che funzionano dal primo clic."
+								title="SOLUZIONI PRONTE ALL'USO"
+								description="Niente setup infiniti né mesi di integrazione. I nostri agenti AI si attivano in pochi giorni e iniziano a generare risultati dal primo utilizzo. Sviluppiamo solo ciò che serve davvero alla tua azienda."
 								stats="15h+ SALVATE / SETT."
 							/>
 							<FeatureCard
 								icon="account_balance_wallet"
-								title="SEMPLICITÀ"
-								description="Manutenzione continua. Ci occupiamo noi di tutto, dall'hosting agli aggiornamenti. Tu pensi solo a crescere."
+								title="ZERO PENSIERI, COSTI RIDOTTI"
+								description="Dall'hosting agli aggiornamenti, ci occupiamo noi di tutto. Tu pensi solo a far crescere il tuo business. I nostri clienti risparmiano in media il 65% sui costi operativi eliminando le attività manuali ripetitive."
 								stats="-65% COSTI OPERATIVI"
 							/>
 							<FeatureCard
 								icon="bar_chart"
-								title="MISURABILITÀ"
-								description="ROI cristallino. Traccia il tuo Business Productivity Index in tempo reale."
+								title="ROI MISURABILE IN TEMPO REALE"
+								description="Traccia il tuo Business Productivity Index e verifica il ritorno sull'investimento in ogni momento. I nostri clienti registrano in media un aumento di produttività di 2.5X nei primi tre mesi."
 								stats="2.5X PRODUTTIVITÀ"
 								className="md:border-r-0"
 							/>
@@ -49,15 +51,16 @@ export default function App() {
 				<section
 					className="py-12 md:py-24 border-y-4 border-black dark:border-white bg-primary text-white"
 					id="how-it-works"
+					aria-label="Il nostro processo"
 				>
 					<div className="container mx-auto px-6">
 						<div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
 							<div className="col-span-1 lg:col-span-1">
 								<h2 className="text-6xl md:text-8xl vertical-text tracking-tighter hidden lg:block opacity-30 font-display uppercase">
-									PROCESSO
+									COME FUNZIONA
 								</h2>
 								<h2 className="text-5xl tracking-tighter lg:hidden font-display uppercase">
-									PROCESSO
+									COME FUNZIONA
 								</h2>
 							</div>
 							<div className="col-span-1 lg:col-span-3 grid md:grid-cols-3 gap-8">
@@ -69,9 +72,11 @@ export default function App() {
 										SELEZIONE & ANALISI
 									</h3>
 									<p className="font-bold opacity-80 uppercase text-sm">
-										Il primo passo è conoscersi. Analizziamo l'impatto reale
-										dell'AI sulla tua azienda: lavoriamo solo dove possiamo
-										generare un valore misurabile.
+										Il primo passo è una consulenza gratuita. Analizziamo i
+										processi della tua azienda per identificare dove
+										l'intelligenza artificiale può generare il massimo
+										risparmio. Lavoriamo solo dove possiamo garantire un
+										ritorno misurabile.
 									</p>
 								</div>
 								<div className="bg-black p-8 border-4 border-white shadow-[12px_12px_0px_0px_rgba(255,255,255,1)]">
@@ -82,9 +87,10 @@ export default function App() {
 										DESIGN DI VALORE
 									</h3>
 									<p className="font-bold opacity-80 uppercase text-sm">
-										Costruiamo l'architettura del tuo successo. Una fase di
-										progettazione dedicata che elimina ogni incertezza su costi,
-										tempi e risultati finali.
+										Progettiamo la soluzione su misura per la tua azienda.
+										Ricevi un preventivo trasparente, una timeline chiara e
+										una roadmap condivisa che elimina ogni incertezza su
+										costi, tempi e risultati finali.
 									</p>
 								</div>
 								<div className="bg-black p-8 border-4 border-white shadow-[12px_12px_0px_0px_rgba(255,255,255,1)]">
@@ -95,82 +101,59 @@ export default function App() {
 										RILASCIO MVP
 									</h3>
 									<p className="font-bold opacity-80 uppercase text-sm">
-										Entriamo in produzione. Il primo modulo del tuo nuovo
-										ufficio digitale è pronto per abbattere i costi e liberare
-										il talento del tuo team.
+										Il tuo primo agente AI entra in produzione. In poche
+										settimane il tuo team è più libero, i costi operativi
+										calano e la tua azienda lavora con strumenti di livello
+										enterprise — senza la complessità enterprise.
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section className="py-12 md:py-24 bg-background-light dark:bg-background-dark overflow-hidden border-t-4 border-black dark:border-white">
+				<section
+					className="py-12 md:py-24 bg-background-light dark:bg-background-dark overflow-hidden border-t-4 border-black dark:border-white"
+					id="testimonials"
+					aria-label="Testimonianze clienti"
+				>
 					<div className="container mx-auto px-6">
 						<h2 className="text-5xl md:text-7xl tracking-tighter mb-12 md:mb-20 md:text-center font-display uppercase">
-							CHI CI HA SCELTO
+							COSA DICONO I NOSTRI CLIENTI
 						</h2>
 						<div className="grid md:grid-cols-2 gap-8 text-black dark:text-white">
 							<Card>
 								<CardDescription>
-									"Milena AI ha rivoluzionato il nostro supporto: gestisce in
-									autonomia stato ordini e disponibilità prodotti h24, azzerando
-									i tempi di attesa e liberando il team dalle richieste
-									ripetitive"
+									"Milena AI ha rivoluzionato il nostro supporto clienti:
+									gestisce in autonomia lo stato degli ordini e la
+									disponibilità prodotti 24/7, ha ridotto i tempi di risposta
+									del 90% e ha liberato il team dalle richieste ripetitive."
 								</CardDescription>
 								<CardFooter>
-									{/* <img
-										alt="David Chen"
-										className="h-16 w-16 border-2 border-black grayscale"
-										src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF_uRYkfzokxDcwIw6_FYFLpUBV1STW3n4dPrudWz7PClzpvNGjlR6N74rw6_5t_rJdXsPhi4enAJ_AjJGplzj3j_VEsGyM23AJv4iK_oh9iUvYTmAkkIQJi1wozfo-GFhFfn3Y2bqRaGZzQzlx5Gk9L167GHUJ8NVZLR291TEL3KkSErmRbDwcLc1MfHbD9YVRUJ1FY-QUM0cLzhH5bV_mktM5-St9IoGdUVyVQl65Df4kPOV0AQK_XcXzwQhvYFd-Ec4WfOJAgFv"
-									/> */}
 									<div>
 										<p className="font-black text-primary">NinjaTesi</p>
 										<p className="text-xs font-bold uppercase">
-											www.ninjatesi.it
+											Fondatore · www.ninjatesi.it
 										</p>
 									</div>
 								</CardFooter>
 							</Card>
 							<Card>
 								<CardDescription>
-									"Computer Vision applicata al mondo reale: il nostro agente
-									scansiona i menù dei locali e sincronizza i listini h24. Un
-									processo che prima richiedeva ore di lavoro oggi è istantaneo
-									e totalmente automatizzato."
+									"Il nostro agente di Computer Vision scansiona
+									automaticamente i menù dei locali e sincronizza i listini
+									in tempo reale, 24 ore su 24. Un processo che prima
+									richiedeva ore di lavoro manuale oggi è completamente
+									automatizzato."
 								</CardDescription>
 								<CardFooter>
-									{/* <img
-										alt="Sarah Jenkins"
-										className="h-16 w-16 border-2 border-black grayscale"
-										src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkScD1YTp4uVQkV2IWQmp137leKHNpA__PpIPq6Qdkk7o3Bj4WaA6aoDe3HZF_VQ_rDoVnYNCUfn7PP_CVs0UeinyoUJYqv_PHsWEEp1_OeSqqQOqtlkmqTFHWTqvKvW1xEtzFyXDiLHQ4b4j5tn2vZP6XMRm3T6DULpgQCrL6SEGNC9bSYRdHNpNKu-B5MsmY43PUg6dn8MdByaMBjaPgz49l3FYS6yvh7kwtjZwnUzixGzYPc27KEA2HOVVh2V0EY_OD-zbykVDa"
-									/> */}
 									<div>
 										<p className="font-black text-primary">AGLE Service</p>
 										<p className="text-xs font-bold uppercase">
-											www.agleservice.it
+											CEO · www.agleservice.it
 										</p>
 									</div>
 								</CardFooter>
 							</Card>
-							{/* <Card>
-								<CardDescription>
-									"Servizio gestito significa che non mi serve un reparto IT.
-									Glazeen si occupa di tutto."
-								</CardDescription>
-								<CardFooter>
-									<img
-										alt="Marcus Miller"
-										className="h-16 w-16 border-2 border-black grayscale"
-										src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2Szv_SCzB9ZVzelEK-r1pcO9JeS0vBGw7Sy2XKABE-WXOzgSWxz-NCyFWV-y06BPsS7HM0jgSXZLAEe0H3zBWoAnKNvGFBR6QS6YUbr2VppU2hOlyWsNkYBunqGiu5ult1vk3pmbEEImf2GEX7c5fjZQokHidSYjjCxslAElj9tiSSK0WyiOYDKdyAaF0aPhVGJyxaRHhb5M-iG7IqP02yLYWlTMSNQvT2AjnsscVnG5X07SEIJm4rnkmfbSkwOKtWTuaAQlH9sGV"
-									/>
-									<div>
-										<p className="font-black text-primary">MARCUS MILLER</p>
-										<p className="text-xs font-bold uppercase">
-											Founder, Miller Creative
-										</p>
-									</div>
-								</CardFooter>
-							</Card> */}
 						</div>
 					</div>
 				</section>

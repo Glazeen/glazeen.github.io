@@ -10,10 +10,16 @@ export default function Navbar() {
 	return (
 		<header className="border-b-4 border-black dark:border-white sticky top-0 z-100 bg-background-light dark:bg-background-dark">
 			<div className="container mx-auto flex h-20 items-center justify-between px-6">
-				<img src="/glazeen-logo.svg" alt="Glazeen Logo" className="h-52 w-52" />
+				<a href="/" aria-label="Glazeen - Torna alla homepage">
+					<img
+						src="/glazeen-logo.svg"
+						alt="Glazeen Logo"
+						className="h-52 w-52"
+					/>
+				</a>
 
 				{/* Desktop Navigation */}
-				<nav className="hidden lg:flex items-center gap-10">
+				<nav aria-label="Navigazione principale" className="hidden lg:flex items-center gap-10">
 					{NAV_LINKS.map((link) => (
 						<a
 							key={link.href}
@@ -31,7 +37,9 @@ export default function Navbar() {
 					type="button"
 					className="lg:hidden p-2 text-black dark:text-white"
 					onClick={() => setIsOpen(!isOpen)}
-					aria-label="Toggle menu"
+					aria-label="Apri menu di navigazione"
+					aria-expanded={isOpen}
+					aria-controls="mobile-menu"
 				>
 					{isOpen ? <X size={32} /> : <Menu size={32} />}
 				</button>
@@ -41,13 +49,14 @@ export default function Navbar() {
 			<AnimatePresence>
 				{isOpen && (
 					<motion.div
+						id="mobile-menu"
 						initial={{ height: 0, opacity: 0 }}
 						animate={{ height: "auto", opacity: 1 }}
 						exit={{ height: 0, opacity: 0 }}
 						transition={{ duration: 0.3, ease: "easeInOut" }}
 						className="lg:hidden overflow-hidden bg-background-light dark:bg-background-dark border-b-4 border-black dark:border-white"
 					>
-						<nav className="flex flex-col p-6 gap-6">
+						<nav aria-label="Navigazione mobile" className="flex flex-col p-6 gap-6">
 							{NAV_LINKS.map((link) => (
 								<a
 									key={link.href}
