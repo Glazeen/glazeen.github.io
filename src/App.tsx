@@ -109,7 +109,7 @@ export default function App() {
 						<h2 className="text-5xl md:text-7xl tracking-tighter mb-12 md:mb-20 md:text-center font-display uppercase">
 							CHI CI HA SCELTO
 						</h2>
-						<div className="grid md:grid-cols-3 gap-8 text-black dark:text-white">
+						<div className="grid md:grid-cols-2 gap-8 text-black dark:text-white">
 							<Card>
 								<CardDescription>
 									"Milena AI ha rivoluzionato il nostro supporto: gestisce in
@@ -118,11 +118,11 @@ export default function App() {
 									ripetitive"
 								</CardDescription>
 								<CardFooter>
-									<img
+									{/* <img
 										alt="David Chen"
 										className="h-16 w-16 border-2 border-black grayscale"
 										src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF_uRYkfzokxDcwIw6_FYFLpUBV1STW3n4dPrudWz7PClzpvNGjlR6N74rw6_5t_rJdXsPhi4enAJ_AjJGplzj3j_VEsGyM23AJv4iK_oh9iUvYTmAkkIQJi1wozfo-GFhFfn3Y2bqRaGZzQzlx5Gk9L167GHUJ8NVZLR291TEL3KkSErmRbDwcLc1MfHbD9YVRUJ1FY-QUM0cLzhH5bV_mktM5-St9IoGdUVyVQl65Df4kPOV0AQK_XcXzwQhvYFd-Ec4WfOJAgFv"
-									/>
+									/> */}
 									<div>
 										<p className="font-black text-primary">NinjaTesi</p>
 										<p className="text-xs font-bold uppercase">
@@ -139,11 +139,11 @@ export default function App() {
 									e totalmente automatizzato."
 								</CardDescription>
 								<CardFooter>
-									<img
+									{/* <img
 										alt="Sarah Jenkins"
 										className="h-16 w-16 border-2 border-black grayscale"
 										src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkScD1YTp4uVQkV2IWQmp137leKHNpA__PpIPq6Qdkk7o3Bj4WaA6aoDe3HZF_VQ_rDoVnYNCUfn7PP_CVs0UeinyoUJYqv_PHsWEEp1_OeSqqQOqtlkmqTFHWTqvKvW1xEtzFyXDiLHQ4b4j5tn2vZP6XMRm3T6DULpgQCrL6SEGNC9bSYRdHNpNKu-B5MsmY43PUg6dn8MdByaMBjaPgz49l3FYS6yvh7kwtjZwnUzixGzYPc27KEA2HOVVh2V0EY_OD-zbykVDa"
-									/>
+									/> */}
 									<div>
 										<p className="font-black text-primary">AGLE Service</p>
 										<p className="text-xs font-bold uppercase">
@@ -152,7 +152,7 @@ export default function App() {
 									</div>
 								</CardFooter>
 							</Card>
-							<Card>
+							{/* <Card>
 								<CardDescription>
 									"Servizio gestito significa che non mi serve un reparto IT.
 									Glazeen si occupa di tutto."
@@ -170,7 +170,7 @@ export default function App() {
 										</p>
 									</div>
 								</CardFooter>
-							</Card>
+							</Card> */}
 						</div>
 					</div>
 				</section>
