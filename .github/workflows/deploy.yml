@@ -39,6 +39,8 @@ jobs:
         run: pnpm install
         
       - name: Build
+        env:
+          VITE_CONTACT_API_URL: ${{ vars.VITE_CONTACT_API_URL || 'https://api.glazeen.ai' }}
         run: pnpm run build
         
       - name: Setup Pages

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { NAV_LINKS } from "../constants/navigation";
 import { Button } from "./ui/button";
 
-export default function Navbar() {
+export default function Navbar({ onContact }: { onContact?: () => void }) {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
@@ -19,7 +19,10 @@ export default function Navbar() {
 				</a>
 
 				{/* Desktop Navigation */}
-				<nav aria-label="Navigazione principale" className="hidden lg:flex items-center gap-10">
+				<nav
+					aria-label="Navigazione principale"
+					className="hidden lg:flex items-center gap-10"
+				>
 					{NAV_LINKS.map((link) => (
 						<a
 							key={link.href}
@@ -29,7 +32,7 @@ export default function Navbar() {
 							{link.label}
 						</a>
 					))}
-					<Button>INIZIA ORA</Button>
+					<Button onClick={onContact}>INIZIA ORA</Button>
 				</nav>
 
 				{/* Mobile Menu Toggle */}
@@ -56,7 +59,10 @@ export default function Navbar() {
 						transition={{ duration: 0.3, ease: "easeInOut" }}
 						className="lg:hidden overflow-hidden bg-background-light dark:bg-background-dark border-b-4 border-black dark:border-white"
 					>
-						<nav aria-label="Navigazione mobile" className="flex flex-col p-6 gap-6">
+						<nav
+							aria-label="Navigazione mobile"
+							className="flex flex-col p-6 gap-6"
+						>
 							{NAV_LINKS.map((link) => (
 								<a
 									key={link.href}
@@ -67,7 +73,7 @@ export default function Navbar() {
 									{link.label}
 								</a>
 							))}
-							<Button size="lg" className="w-full mt-4">
+							<Button size="lg" className="w-full mt-4" onClick={onContact}>
 								INIZIA ORA
 							</Button>
 						</nav>

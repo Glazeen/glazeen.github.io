@@ -1,7 +1,7 @@
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 
-export default function Hero() {
+export default function Hero({ onContact }: { onContact?: () => void }) {
 	return (
 		<section
 			className="relative pt-12 pb-24 lg:pt-32 border-b-4 border-black dark:border-white"
@@ -9,28 +9,35 @@ export default function Hero() {
 		>
 			<div className="container mx-auto px-6">
 				<div className="relative z-10">
-					<Badge>SOLUZIONI AI PER PMI ITALIANE</Badge>
-					<h1 className="text-6xl md:text-9xl lg:text-[12rem] tracking-tighter mb-8 leading-none font-display uppercase">
+					<Badge className="text-sm sm:text-xl">
+						SOLUZIONI AI PER PMI ITALIANE
+					</Badge>
+					<h1 className="text-4xl md:text-6xl lg:text-9xl tracking-tighter mb-8 leading-none font-display uppercase">
 						AUTOMAZIONE AI PER LA TUA{" "}
 						<span className="text-primary">AZIENDA</span>
 					</h1>
 				</div>
 				<div className="grid grid-cols-1 lg:grid-cols-12 gap-0 items-start">
-					<div className="col-span-auto lg:col-span-7 lg:pr-12">
-						<p className="text-2xl md:text-4xl font-bold leading-tight mb-12 border-l-8 border-primary pl-6">
-							Agenti di intelligenza artificiale pronti all'uso per le piccole
-							e medie imprese. Riduciamo i costi operativi, automatizziamo i
+					<div className="col-span-auto lg:col-span-7 lg:xlpr-12">
+						<p className="text-lg md:text-2xl lg:text-3xl font-bold leading-tight mb-12 border-l-8 border-primary pl-6 pr-6">
+							Agenti di intelligenza artificiale pronti all'uso per le piccole e
+							medie imprese. Riduciamo i costi operativi, automatizziamo i
 							processi ripetitivi e portiamo tecnologia enterprise nel tuo
 							business — dai risultati misurabili, non dalle promesse.
 						</p>
 						<div className="flex">
-							<Button className="lg:hidden" variant="brutalist">
+							<Button
+								className="lg:hidden"
+								variant="brutalist"
+								onClick={onContact}
+							>
 								RICHIEDI UNA DEMO GRATUITA
 							</Button>
 							<Button
 								className="hidden lg:block"
 								variant="brutalist"
 								size={"lg"}
+								onClick={onContact}
 							>
 								RICHIEDI UNA DEMO GRATUITA
 							</Button>

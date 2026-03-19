@@ -1,3 +1,5 @@
+import * as React from "react";
+import { ContactModal } from "./components/contact-modal";
 import FeatureCard from "./components/feature-card";
 import Footer from "./components/footer";
 import Hero from "./components/hero";
@@ -5,11 +7,14 @@ import Navbar from "./components/navbar";
 import { Card, CardDescription, CardFooter } from "./components/ui/card";
 
 export default function App() {
+	const [isContactOpen, setIsContactOpen] = React.useState(false);
+
 	return (
 		<div className="scheme-light relative flex min-h-screen overflow-x-hidden flex-col text-black dark:text-white bg-background-light dark:bg-background-dark font-body selection:bg-primary selection:text-white">
-			<Navbar />
+			<ContactModal open={isContactOpen} onClose={() => setIsContactOpen(false)} />
+			<Navbar onContact={() => setIsContactOpen(true)} />
 			<main className="flex-1">
-				<Hero />
+				<Hero onContact={() => setIsContactOpen(true)} />
 				<section
 					className="py-12 md:py-24 bg-white dark:bg-black overflow-hidden"
 					id="features"
